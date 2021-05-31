@@ -5,6 +5,10 @@
 // Closures are created every time a function is created
 // As we know, each function is object in Javascript
 
+// Closure is when a function is able to remember and access its lexical scope 
+// even when that function is executing outside its lexical scope.
+
+
 // Exemple 1
 function ex1() {
   function test() {
