@@ -96,5 +96,18 @@ console.log(fn23() === window)
 
 
 
+// Exemple 3
+function ex3() {
+  var hero = {
+    _name: "Test",
+    getSecretIdentity: function () {
+      return this._name;
+    }
+  }
 
+  var stoleSecretIdentifi = hero.getSecretIdentity;
+
+  console.log(stoleSecretIdentifi())
+  console.log(hero.getSecretIdentity())
+}
 

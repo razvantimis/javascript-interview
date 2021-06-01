@@ -104,3 +104,19 @@ function ex5WithClosure() {
     })(index), 100 * index)
   }
 }
+
+
+// Exemple 6
+function ex6() {
+  var num = 0
+  function outer() {
+    var num = 2;
+    function inner() {
+      num++;
+      var num = 3;
+      console.log(num)
+    }
+    inner()
+  }
+  outer()
+}
